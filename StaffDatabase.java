@@ -347,6 +347,15 @@ class StaffDatabase {
 
           keyboard.print("\nAverage Grade of " + assignment.getName() + ": "+ (assignment.getAverageGrade(c) == -1 ? "No grades have been added" : assignment.getAverageGrade(c) + "%"));
         }
+
+        // If calculating course grade
+        else if (choice.length() >= 17 && choice.substring(0, 17).equals("View Course Grade")) {
+          Classroom c = cd.searchID(Integer.parseInt(choice.substring(19, 25)));
+          Student s = sd.searchID(Long.parseLong(choice.substring(choice.length()-11, choice.length()-1)));
+
+          keyboard.print("\nCourse Grade of " + s.getFirstName() + " " + s.getLastName() + ": " + (s.getCourseGrade(c) == -1 ? "No grades have been added" : s.getCourseGrade(c) + "%"));
+          
+        }
     }
     // Persist all information
     keyboard.persistInfo(this);
@@ -358,7 +367,15 @@ class StaffDatabase {
   @returns void
   */
   private void deleteAdmin(long id) {
-    staff.remove(searchID(id));
+    // Variables
+    Admin a = searchID(id);
+    
+    // From all classrooms, remove admin
+    for (Classroom c : a.getClassrooms()) {
+      c.getAdmins().remove(a);
+    }
+    
+    staff.remove(a);
   }
 
   /*

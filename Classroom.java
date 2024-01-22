@@ -45,7 +45,7 @@ class Classroom {
     
     // Iterate through the students and add the students' average
     for (Student s : students) {
-      classAverage += s.getAverage(this);
+      classAverage += s.getCourseGrade(this);
     }
     
     // Divide the class average by the number of students

@@ -179,6 +179,8 @@ class AssignmentDatabase {
   */
   public void addAssignment(Assignment assignment) {
     assignments.add(assignment);
+
+    sort(0, assignments.size()-1);
   }
 
   /*

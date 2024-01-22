@@ -28,11 +28,30 @@ class Student extends User {
   @parameters Classroom
   @return double
   */
-  public double getAverage(Classroom c) {
-    // TODO: Implement
-    
-    // Calculate average
-    return 0;
+  public double getCourseGrade(Classroom c) {
+    // Variables
+    double total = 0;
+    int count = 0;
+    Assignment a;
+
+    // Iterate through the classroom's assignments
+    for (Assignment assignment : c.getAssignmentDatabase().getAssignments()) {
+      // Get student's assignment matching classroom assignment id
+      a = getAssignmentDatabase().searchID(assignment.getID());
+      
+      // If assignment is ungraded, skip
+      if (a.getGrade() == -1) continue;
+
+      // Add to counters
+      total += a.getGrade();
+      count++;
+    }
+
+    // If there are no assignments, return -1
+    if (count == 0) return -1;
+
+    // Return average
+    return total/count;
   }
 
   /*

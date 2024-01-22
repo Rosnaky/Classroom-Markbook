@@ -286,19 +286,19 @@ public class Keyboard {
                 add("Create Assignment (" + classroom.getID() + ")");
                 
                 // Add each assignment
-                for (Assignment a : classroom.getAssignmentDatabase().getAssignments()) {
-                  add(a.getName() + " (" + classroom.getID() + ") (" + a.getID() + ")");
+                for (Assignment assignment : classroom.getAssignmentDatabase().getAssignments()) {
+                  add(assignment.getName() + " (" + classroom.getID() + ") (" + assignment.getID() + ")");
                   
                   // For each assignment, add menu to change grade
-                  keyMap.put(a.getName() + " (" + classroom.getID() + ") (" + a.getID() + ")", new ArrayList<String>() {
+                  keyMap.put(assignment.getName() + " (" + classroom.getID() + ") (" + assignment.getID() + ")", new ArrayList<String>() {
                     {
                       add("Return");
-                      add("Delete Assignment (" + classroom.getID() + ") (" + a.getID() + ")");
-                      add("Average Grade (" + classroom.getID() + ") (" + a.getID() + ")");
+                      add("Delete Assignment (" + classroom.getID() + ") (" + assignment.getID() + ")");
+                      add("Average Grade (" + classroom.getID() + ") (" + assignment.getID() + ")");
                       
                       // Add option to change grade for each student
                       for (Student s : classroom.getStudents()) {
-                        add("Change Assignment Grade: " + s.getFirstName() + " " + s.getLastName() + ": " + (s.searchID(a.getID()).getGrade() != -1 ? s.searchID(a.getID()).getGrade() : "Ungraded") + " (" + classroom.getID() + ") (" + a.getID() + ") (" + s.getID() + ")");
+                        add("Change Assignment Grade: " + s.getFirstName() + " " + s.getLastName() + ": " + (s.searchID(assignment.getID()).getGrade() != -1 ? s.searchID(assignment.getID()).getGrade() : "Ungraded") + " (" + classroom.getID() + ") (" + assignment.getID() + ") (" + s.getID() + ")");
                       }
                     }
                   }
@@ -320,11 +320,12 @@ public class Keyboard {
                   add("Classroom Student " + s.getFirstName() + " " + s.getLastName() + " (" + classroom.getID() + ") (" + s.getID() + ")");
                   
                   keyMap.put("Classroom Student " + s.getFirstName() + " " + s.getLastName() + " (" + classroom.getID() + ") (" + s.getID() + ")", new ArrayList<String>() {
-                    {
-                    add("Return");
-                    add("Delete Student from Classroom (" + classroom.getID() + ") (" + s.getID() + ")");
-                    add("View Assignments (" + classroom.getID() + ") (" + s.getID() + ")");
-                    }
+                      {
+                        add("Return");
+                        add("Delete Student from Classroom (" + classroom.getID() + ") (" + s.getID() + ")");
+                        add("View Assignments (" + classroom.getID() + ") (" + s.getID() + ")");
+                        add("View Course Grade (" + classroom.getID() + ") (" + s.getID() + ")");
+                      }
                   }
                             );
                   
@@ -333,9 +334,9 @@ public class Keyboard {
                       add("Return");
                       
                       // Show each assignment
-                      for (Assignment a : s.getAssignments()) {
-                        if (classroom.getAssignmentDatabase().searchID(a.getID()) == null) continue;
-                        add("Change Assignment Grade: " + a.getName() + ": " + (a.getGrade() != -1 ? a.getGrade() : "Ungraded") + " (" + classroom.getID() + ") (" + a.getID() + ") (" + s.getID() + ")");
+                      for (Assignment assignment : s.getAssignments()) {
+                        if (classroom.getAssignmentDatabase().searchID(assignment.getID()) == null) continue;
+                        add("Change Assignment Grade: " + assignment.getName() + ": " + (assignment.getGrade() != -1 ? assignment.getGrade() : "Ungraded") + " (" + classroom.getID() + ") (" + assignment.getID() + ") (" + s.getID() + ")");
                       }
                     }
                   }
