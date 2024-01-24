@@ -20,7 +20,8 @@ class User {
   private static final int SHIFT = 11;
   
   /*
-  Constructor
+  Constructor that assigns to each instance variable
+  @date 1/18/2024
   @parameters String, String, String, String, long
   */
   public User(String firstName, String lastName, String username, String password, long id) {
@@ -33,6 +34,8 @@ class User {
 
   /*
   This method gets the username
+  @name getUsername
+  @date 1/18/2024
   @parameters void
   @returns String
   */
@@ -42,6 +45,8 @@ class User {
 
   /*
   This method gets the first name
+  @name getFirstName
+  @date 1/18/2024
   @parameters void
   @returns String
   */
@@ -51,6 +56,8 @@ class User {
 
   /*
   This method gets the last name
+  @name getLastName
+  @date 1/18/2024
   @parameters void
   @returns String
   */
@@ -60,6 +67,8 @@ class User {
 
   /*
   This method gets the id
+  @name getID
+  @date 1/18/2024
   @parameters void
   @returns long
   */
@@ -68,7 +77,9 @@ class User {
   }
 
   /*
-  This method prompts user to edit username
+  This method prompts user to edit first name
+  @name editFirstName
+  @date 1/20/2024
   @parameters void
   @return void
   */
@@ -88,7 +99,9 @@ class User {
   }
 
   /*
-  This method prompts user to edit username
+  This method prompts user to edit last name
+  @name editLastName
+  @date 1/20/2024
   @parameters void
   @return void
   */
@@ -110,6 +123,8 @@ class User {
   
   /*
   This method prompts user to edit username
+  @name editUsername
+  @date 1/20/2024
   @parameters void
   @return void
   */
@@ -131,6 +146,8 @@ class User {
 
   /*
   This method prompts user to edit password
+  @name editPassword
+  @date 1/20/2024
   @parameters void
   @return void
   */
@@ -152,6 +169,8 @@ class User {
 
   /*
   This method returns the user's password encrypted using caesar shift
+  @name getEncryptedPassword
+  @date 1/22/2024
   @parameters void
   @returns string
   */
@@ -174,6 +193,8 @@ class User {
 
   /*
   This method returns a string decrypted for the user's password
+  @name getDecryptedPassword
+  @date 1/22/2024
   @parameters String
   @returns String
   */
@@ -197,6 +218,8 @@ class User {
 
   /*
   This method returns a boolean value depending if a username and password match with the current objects's username and password
+  @name isMatch
+  @date 1/18/2024
   @parameters String, String
   @returns boolean
   */

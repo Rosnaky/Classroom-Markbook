@@ -19,6 +19,7 @@ class StaffDatabase {
 
   /*
   Constructor with files to populate
+  @date 1/18/2024
   @parameters String, String, String
   */
   public StaffDatabase(String sFile, String cFile, String stFile) {
@@ -35,6 +36,8 @@ class StaffDatabase {
 
   /*
   This method adds a new Admin object to the staff ArrayList
+  @name add
+  @date 1/13/2024
   @parameters Admin
   @returns void
   */
@@ -48,6 +51,8 @@ class StaffDatabase {
 
   /*
   This method gets an Admin object from the index
+  @name get
+  @date 1/14/2024
   @parameters int
   @returns Admin
   */
@@ -58,6 +63,8 @@ class StaffDatabase {
 
   /*
   This method searches for an Admin object using username and password. Sequential search is used
+  @name searchNames
+  @date 1/14/2024
   @parameters String, String
   @returns Admin
   */
@@ -77,6 +84,8 @@ class StaffDatabase {
 
   /*
   This method searches for an Admin object using id
+  @name searchID
+  @date 1/15/2024
   @parameters id
   @returns Admin
   */
@@ -110,6 +119,8 @@ class StaffDatabase {
    
   /*
   This method populates the StaffDatabase with Admin objects
+  @name populate
+  @date 1/17/2024
   @parameters String
   @returns void
   */
@@ -133,6 +144,8 @@ class StaffDatabase {
 
   /*
   Gets student database
+  @name getStudentDatabase
+  @date 1/14/2024
   @parameters void
   @returns StudentDatabase
   */
@@ -142,6 +155,8 @@ class StaffDatabase {
 
   /*
   Gets staff arraylist
+  @name getAdmins
+  @date 1/14/2024
   @parameters void
   @returns ArrayList<Admin>
   */
@@ -151,6 +166,8 @@ class StaffDatabase {
 
   /*
   Gets classroom database
+  @name getClassroomDatabase
+  @date 1/14/2024
   @parameters void
   @returns ClassroomDatabase
   */
@@ -160,6 +177,8 @@ class StaffDatabase {
 
   /*
   This method checks if an id is unique
+  @name isUnique
+  @date 1/22/2024
   @parameters long
   @returns boolean
   */
@@ -180,6 +199,8 @@ class StaffDatabase {
   
   /*
   This method undergoes process to create admin. User is prompted to enter all information.
+  @name createAdmin
+  @date 1/12/2024
   @parameters void
   @returns Admin
   */
@@ -225,6 +246,8 @@ class StaffDatabase {
 
   /*
   This method is where the user choice will be identified and executed
+  @name execute
+  @date 1/22/2024
   @parameters String, Admin
   @returns void
   */
@@ -363,6 +386,8 @@ class StaffDatabase {
 
   /*
   This method deletes an admin from the database
+  @name deleteAdmin
+  @date 1/16/2024
   @parameters long
   @returns void
   */
@@ -380,6 +405,8 @@ class StaffDatabase {
 
   /*
   This method deletes all databases
+  @name purge
+  @date 1/17/2024
   @parameters Admin
   @returns void
   */
@@ -393,6 +420,8 @@ class StaffDatabase {
 
   /*
   This function takes sorts the staff arraylist using quick sort.
+  @name sort
+  @date 1/16/2024
   @parameters int, int
   @returns void
   */
@@ -407,6 +436,8 @@ class StaffDatabase {
   
   /*
   This method returns the file associated to this database
+  @name getFile
+  @date 1/16/2024
   @parameters void
   @returns String
   */
@@ -416,6 +447,8 @@ class StaffDatabase {
 
      /*
   This function assigns a random pivot value and quickSort around the pivot. Another function is called to help with this.
+  @name partitionRandomPivot
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */
@@ -435,6 +468,8 @@ class StaffDatabase {
 
   /*
   This function arranges the arraylist values around the pivot.
+  @name partition
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */

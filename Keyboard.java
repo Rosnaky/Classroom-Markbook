@@ -23,7 +23,7 @@ public class Keyboard {
   Scanner keyboard;
   HashMap<String, ArrayList<String>> keyMap;
    
-  // Constructor
+  // Constructor to initialize scanner object
   public Keyboard() {
     // Initialize Scanner object
     keyboard = new Scanner(System.in);
@@ -31,6 +31,8 @@ public class Keyboard {
 
   /*
   Method to get a double user input
+  @name getDouble
+  @date 1/12/2024
   @parameters String
   @returns double
   */
@@ -44,6 +46,8 @@ public class Keyboard {
 
   /*
   Method to get an integer user input
+  @name getInt
+  @date 1/12/2024
   @parameters String
   @returns int
   */
@@ -57,6 +61,8 @@ public class Keyboard {
 
   /*
   Method to get a String user input
+  @name getWord
+  @date 1/12/2024
   @parameters String
   @returns String
   */
@@ -70,6 +76,8 @@ public class Keyboard {
 
   /*
   Method to get a line user input
+  @name getLine
+  @date 1/12/2024
   @parameters String
   @returns String
   */
@@ -83,6 +91,8 @@ public class Keyboard {
 
   /*
   Method to get usernames and passwords
+  @name getAccounts
+  @date 1/13/2024
   @parameters String
   @returns ArrayList<String[]>
   */
@@ -139,6 +149,8 @@ public class Keyboard {
 
   /*
   This method writes a string to a file
+  @name writeToFile
+  @date 1/13/2024
   @parameters String, String
   @returns void
   */
@@ -165,6 +177,8 @@ public class Keyboard {
 
   /*
   This method prints message to user
+  @name print
+  @date 1/12/2024
   @parameters String
   @returns void
   */
@@ -176,6 +190,8 @@ public class Keyboard {
 
   /*
   This method prints the menus and returns a String indicating which option was chosen
+  @name menu
+  @date 1/22/2024
   @parameters Admin, StaffDatabase
   @returns String
   */
@@ -195,6 +211,8 @@ public class Keyboard {
 
   /*
   This method has a recursive call until a leaf choice is chosen
+  @name getMenuChoice
+  @date 1/16/2024
   @parameters String
   @returns String
   */
@@ -235,6 +253,8 @@ public class Keyboard {
 
   /*
   This function populates keymap with the admin's options
+  @name initializeOptions
+  @date 1/22/2024
   @parameters Admin, StaffDatabase
   @returns void
   */
@@ -482,6 +502,8 @@ public class Keyboard {
 
   /*
   This method reads the information in the file and populates the database
+  @name getAssignmentInfo
+  @date 1/16/2024
   @parameters String, AssignmentDatabase
   @returns void
   */
@@ -523,6 +545,8 @@ public class Keyboard {
   
   /*
   This method reads the information in the file and populates the database
+  @name getClassroomInfo
+  @date 1/16/2024
   @parameters String, StaffDatabase
   @returns void
   */
@@ -594,6 +618,8 @@ public class Keyboard {
 
   /*
   This method persists the classroom info in a file
+  @name persistClassroomInfo
+  @date 1/16/2024
   @parameters String, ClassroomDatabase
   @returns void
   */
@@ -645,6 +671,8 @@ public class Keyboard {
 
   /*
   This method persists the admin info in a file
+  @name persistAdminInfo
+  @date 1/15/2024
   @parameters String, StaffDatabase
   @returns void
   */
@@ -686,6 +714,8 @@ public class Keyboard {
 
   /*
   This method persists all information in the respective file
+  @name persistInfo
+  @date 1/17/2024
   @parameters StaffDatabase
   @returns void
   */
@@ -701,6 +731,8 @@ public class Keyboard {
 
   /*
   This method persists the students info of a class in a file
+  @name persistStudentsInfo
+  @date 1/17/2024
   @parameters String, StudentDatabase
   @returns void
   */
@@ -724,6 +756,8 @@ public class Keyboard {
 
   /*
   This method reads the information in the file and populates the database
+  @name getStudentsInfo
+  @date 1/17/2024
   @parameters String, StudentDatabase
   @returns void
   */
@@ -775,6 +809,8 @@ public class Keyboard {
 
   /*
   This is a helper function that erases a file's contents
+  @name eraseFile
+  @date 1/15/2024
   @parameters String
   @returns void
   */

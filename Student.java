@@ -15,7 +15,7 @@ class Student extends User {
   AssignmentDatabase assignments;
      
   /*
-  Constructor
+  Constructor that creates a new user object with parameters
   @parameters String, String, String, String, long
   */
   public Student(String firstName, String lastName, String username, String password, long id) {
@@ -25,6 +25,8 @@ class Student extends User {
 
   /*
   This method calculates the average of the assignments in a class
+  @name getCourseGrade
+  @date 1/17/2024
   @parameters Classroom
   @return double
   */
@@ -56,6 +58,8 @@ class Student extends User {
 
   /*
   This method adds an assignment to the student's list of assignments
+  @name addAssignment
+  @date 1/15/2024
   @parameters Assignment
   @returns void
   */
@@ -68,6 +72,8 @@ class Student extends User {
 
   /*
   This method gets the assignments arraylist
+  @name getAssignments
+  @date 1/16/2024
   @parameters void
   @returns ArrayList<Assignment>
   */
@@ -77,6 +83,8 @@ class Student extends User {
 
   /*
   This method gets the assignmentdatabase
+  @name getAssignmentDatabase
+  @date 1/16/2024
   @parameters void
   @returns AssignmentDatabase
   */
@@ -86,6 +94,8 @@ class Student extends User {
   
   /*
   This method searches for an assignment by id and deletes that assignment
+  @name removeAssignment
+  @date 1/16/2024
   @parameters int
   @returns void
   */
@@ -96,6 +106,8 @@ class Student extends User {
 
   /*
   This method searches for an assignment by id and returns that assignment
+  @name searchID
+  @date 1/16/2024
   @parameters int
   @returns Assignment
   */

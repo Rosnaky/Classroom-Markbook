@@ -4,7 +4,7 @@
 @date 1/24/2024
 @description This Assignment Database class is a collection of Assignment objects. Each student and classroom has an assignment database to manage assignment objects
 
-!Assignment data for each classroom persisted in classroomidAssignments.txt file when classroom is created!
+!Assignment data for each classroom persisted in {classroomid}Assignments.txt file when classroom is created!
 */
 
 // Imports
@@ -20,7 +20,8 @@ class AssignmentDatabase {
   private String file;
 
   /*
-  Constructor
+  Constructor that populates with file name
+  @date 1/18/2024
   @parameters void
   */
   public AssignmentDatabase(String file) {
@@ -46,7 +47,8 @@ class AssignmentDatabase {
   }
 
   /*
-  Constructor
+  Constructor which just creates new arraylist of assignments
+  @date 1/16/2024
   @parameters void
   */
   public AssignmentDatabase() {
@@ -55,6 +57,8 @@ class AssignmentDatabase {
 
   /*
   This method populates the AssignmentDatabase with Assignment objects from a file
+  @name populate
+  @date 1/18/2024
   @parameters void
   @returns void
   */
@@ -65,6 +69,8 @@ class AssignmentDatabase {
 
   /*
   This method returns the assignments arraylist
+  @name getAssignments
+  @date 1/17/2024
   @parameters void
   @returns ArrayList<Assignment>
   */
@@ -74,7 +80,9 @@ class AssignmentDatabase {
   
   /*
   This method searches for an Assignment object using id
-  @parameters long
+  @name searchID
+  @date 1/17/2024
+  @parameters int
   @returns Assignment
   */
   public Assignment searchID(int id) {
@@ -107,6 +115,8 @@ class AssignmentDatabase {
 
   /*
   This function takes sorts the assignments arraylist using quick sort.
+  @name sort
+  @date 1/18/2024
   @parameters int, int
   @returns void
   */
@@ -122,6 +132,8 @@ class AssignmentDatabase {
 
   /*
   This function assigns a random pivot value and quick sorts around the pivot. Another function is called to help with this.
+  @name partitiionRandomPivot
+  @date 1/18/2024
   @parameters int, int
   @returns int
   */
@@ -141,6 +153,8 @@ class AssignmentDatabase {
 
   /*
   This function arranges the arraylist values around the pivot.
+  @name partition
+  @date 1/18/2024
   @parameters int, int
   @returns int
   */
@@ -174,6 +188,8 @@ class AssignmentDatabase {
 
   /*
   This function adds an assignment to the arraylist.
+  @name addAssignment
+  @date 1/18/2024
   @parameters Assignment
   @returns void
   */
@@ -185,6 +201,8 @@ class AssignmentDatabase {
 
   /*
   This function removes an assignment from the arraylist.
+  @name removeAssignment
+  @date 1/18/2024
   @parameters Assignment
   @returns void
   */
@@ -194,6 +212,8 @@ class AssignmentDatabase {
 
   /*
   This method returns file
+  @name getFile
+  @date 1/18/2024
   @parameters void
   @returns String
   */

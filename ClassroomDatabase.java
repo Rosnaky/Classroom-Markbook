@@ -17,7 +17,8 @@ class ClassroomDatabase {
   String file;
   
   /*
-  Constructor
+  Constructor which creates a list of classrooms and assigns a file to the database
+  @date 1/15/2024
   @parameters String
   */
   public ClassroomDatabase(String file) {
@@ -28,6 +29,8 @@ class ClassroomDatabase {
 
   /*
   This method deletes content of this database
+  @name purge
+  @date 1/19/2024
   @parameters void
   @returns void
   */
@@ -43,6 +46,8 @@ class ClassroomDatabase {
 
   /*
   This method gets the ArrayList of Classrooms
+  @name getClassrooms
+  @date 1/15/2024
   @parameters void
   @returns ArrayList<Classroom>
   */
@@ -52,6 +57,8 @@ class ClassroomDatabase {
   
   /*
   This program adds a classroom to the classrooms arraylist, and sorts it.
+  @name add
+  @date 1/15/2024
   @parameters Classroom
   @returns void
   */
@@ -65,6 +72,8 @@ class ClassroomDatabase {
    
   /*
   This method populates the classrooms arraylist with the information from the file.
+  @name populate
+  @date 1/16/2024
   @parameters StaffDatabase
   @returns void
   */
@@ -75,6 +84,8 @@ class ClassroomDatabase {
 
   /*
   This method checks if the classroom id is unique
+  @name isUnique
+  @date 1/22/2024
   @parameters int
   @returns boolean
   */
@@ -94,6 +105,8 @@ class ClassroomDatabase {
   
   /*
   This method creates a classroom, adds it to the database, and returns the object.
+  @name create
+  @date 1/13/2024
   @parameters voidInteger.parseInt(word)
   @returns void
   */
@@ -128,6 +141,8 @@ class ClassroomDatabase {
 
   /*
   This method deletes a classroom from the database. The admins association with the classroom, and all assignments are deleted.
+  @name deleteClassroom
+  @date 1/14/2024
   @parameters void
   @returns void
   */
@@ -157,6 +172,8 @@ class ClassroomDatabase {
 
   /*
   This method searches for an Admin object using id
+  @name searchID
+  @date 1/16/2024
   @parameters id
   @returns Classroom
   */
@@ -189,6 +206,8 @@ class ClassroomDatabase {
 
   /*
   This function takes sorts the classrooms arraylist using quick sort.
+  @name sort
+  @date 1/16/2024
   @parameters int, int
   @returns void
   */
@@ -203,6 +222,8 @@ class ClassroomDatabase {
 
   /*
   This function assigns a random pivot value and sorts around the pivot. Another function is called to help with this.
+  @name partitionRandomPivot
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */
@@ -222,6 +243,8 @@ class ClassroomDatabase {
 
   /*
   This function arranges the arraylist values around the pivot.
+  @name partition
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */
@@ -255,6 +278,8 @@ class ClassroomDatabase {
 
   /*
   Gets the file name associated with this classroom database
+  @name getFile
+  @date 1/14/2024
   @parameters void
   @returns String
   */

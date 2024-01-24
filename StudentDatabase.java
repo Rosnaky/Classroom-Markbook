@@ -19,7 +19,8 @@ class StudentDatabase {
   String file;
 
   /*
-  Constructor
+  Constructor with file for for each database
+  @date 1/18/2024
   @parameters String
   */
   public StudentDatabase(String file) {
@@ -44,6 +45,8 @@ class StudentDatabase {
 
   /*
   This program adds a student to the student database.
+  @name add
+  @date 1/18/2024
   @parameters Student
   @returns void
   */
@@ -56,6 +59,8 @@ class StudentDatabase {
 
   /*
   This method returns file
+  @name getFile
+  @date 1/15/2024
   @parameters void
   @returns String
   */
@@ -65,6 +70,8 @@ class StudentDatabase {
 
   /*
   This method checks if an id is unique
+  @name isUnique
+  @date 1/22/2024
   @parameters long
   @returns boolean
   */
@@ -84,6 +91,8 @@ class StudentDatabase {
 
   /*
   This method creates a new student and adds it to the database.
+  @name create
+  @date 1/15/2024
   @parameters void
   @returns void
   */
@@ -120,6 +129,8 @@ class StudentDatabase {
 
   /*
   This method populates the Students arraylist with the information from the file.
+  @name populate
+  @date 1/16/2024
   @parameters void
   @returns void
   */
@@ -130,6 +141,8 @@ class StudentDatabase {
 
   /*
   This method returns the student arraylist.
+  @name getStudents
+  @date 1/12/2024
   @parameters void
   @returns ArrayList<Student>
   */
@@ -139,6 +152,8 @@ class StudentDatabase {
 
   /*
   This method searches for an Student object using id
+  @name searchID
+  @date 1/15/2024
   @parameters long
   @returns Student
   */
@@ -173,6 +188,8 @@ class StudentDatabase {
 
   /*
   This function takes sorts the staff arraylist using quick sort.
+  @name sort
+  @date 1/16/2024
   @parameters int, int
   @returns void
   */
@@ -188,6 +205,8 @@ class StudentDatabase {
 
   /*
   This function assigns a random pivot value and quickSort around the pivot. Another function is called to help with this.
+  @name partitionRandomPivot
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */
@@ -207,6 +226,8 @@ class StudentDatabase {
 
   /*
   This function arranges the arraylist values around the pivot.
+  @name partition
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */

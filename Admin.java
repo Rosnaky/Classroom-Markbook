@@ -17,7 +17,8 @@ class Admin extends User {
   ArrayList<Classroom> classrooms;
    
   /*
-  Constructor
+  Constructor that calls User's constructor. New classrooms arraylist created
+  @date 1/15/2024
   @parameters String, String, String, String, long
   */
   public Admin(String firstName, String lastName, String username, String password, long id) {
@@ -27,6 +28,8 @@ class Admin extends User {
     
   /*
   This method logs the admin in. If there are no admins in the system, it will create a new admin.
+  @name login
+  @date 1/15/2024
   @parameters StaffDatabase
   @returns Admin
   */
@@ -65,6 +68,8 @@ class Admin extends User {
    
   /*
   This method gets the ArrayList of Classrooms
+  @name getClassrooms
+  @date 1/15/2024
   @parameters void
   @returns ArrayList<Classroom>
   */
@@ -74,6 +79,8 @@ class Admin extends User {
 
   /*
   This method adds a classroom to the ArrayList of classrooms for the admin
+  @name addClassroom
+  @date 1/16/2024
   @parameters Classroom
   @returns void
   */
@@ -85,6 +92,8 @@ class Admin extends User {
 
   /*
   This method removes a classroom from the ArrayList of classrooms for the admin
+  @name deleteClassroom
+  @date 1/17/2024
   @parameters Classroom
   @returns void
   */

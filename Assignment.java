@@ -14,7 +14,8 @@ public class Assignment {
   private int id;
 
   /*
-  Constructor
+  Constructor that assigns name and id to assignment
+  @date 1/19/2024
   @parameters String, int
   */
   public Assignment(String name, int id) {
@@ -28,6 +29,8 @@ public class Assignment {
 
   /*
   This method gets the assignment name
+  @name getName
+  @date 1/19/2024
   @parameters void
   @returns String
   */
@@ -37,6 +40,8 @@ public class Assignment {
 
   /*
   This method grades an assignment
+  @name grade
+  @date 1/19/2024
   @parameters Double
   @returns void
   */
@@ -46,6 +51,8 @@ public class Assignment {
 
   /*
   This method prompts admin to change the grade of an assignment
+  @name grade
+  @date 1/19/2024
   @parameters void
   @returns void
   */
@@ -63,6 +70,8 @@ public class Assignment {
   
   /*
   This method gets the assignment id
+  @name getID
+  @date 1/16/2024
   @parameters void
   @returns int
   */
@@ -72,6 +81,8 @@ public class Assignment {
 
   /*
   This method gets the assignment grade
+  @name getGrade
+  @date 1/16/2024
   @parameters void
   @returns double
   */
@@ -81,6 +92,8 @@ public class Assignment {
 
   /*
   This method gets the average grade of an assignment in a classroom
+  @name getAverageGrade
+  @date 1/16/2024
   @parameters Classroom
   @returns double
   */

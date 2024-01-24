@@ -8,7 +8,7 @@
 // Imports
 import java.util.ArrayList;
 
-// Classroom objects
+// Classroom class
 class Classroom {
 
   // Instance variables
@@ -19,7 +19,8 @@ class Classroom {
   ArrayList<Admin> admins;
 
   /*
-  Constructor
+  Constructor that assigns name and id of classroom
+  @date 1/16/2024
   @parameters String, int
   */
   public Classroom(String name, int id) {
@@ -36,6 +37,8 @@ class Classroom {
 
   /*
   This method calculates the class average. This is the average of the students' average grades.
+  @name getClassAverage
+  @date 1/22/2024
   @parameters void
   @returns double
   */
@@ -58,6 +61,8 @@ class Classroom {
 
   /*
   This function adds a student object the classroom. The ArrayList is also sorted afterwards.
+  @name addStudent
+  @date 1/15/2024
   @parameters Student
   @returns void
   */
@@ -76,6 +81,8 @@ class Classroom {
 
   /*
   This function adds an admin to the classroom. The ArrayList is also sorted afterwards.
+  @name addAdmin
+  @date 1/16/2024
   @parameters Admin
   @returns void
   */
@@ -89,6 +96,8 @@ class Classroom {
 
   /*
   This function adds an assignment to the classroom's assignments database.
+  @name addAssignment
+  @date 1/17/2024
   @parameters Assignment
   @returns void
   */
@@ -99,6 +108,8 @@ class Classroom {
 
   /*
   This method returns the name of the classroom
+  @name getName
+  @date 1/16/2024
   @parameters void
   @returns String
   */
@@ -108,6 +119,8 @@ class Classroom {
 
    /*
   This method returns the ID of the classroom
+  @name getID
+  @date 1/16/2024
   @parameters void
   @returns int
   */
@@ -117,6 +130,8 @@ class Classroom {
 
   /*
   This method returns the admins ArrayList
+  @name getAdmins
+  @date 1/17/2024
   @parameters void
   @returns ArrayList<Admin>
   */
@@ -126,6 +141,8 @@ class Classroom {
   
   /*
   This method returns the students ArrayList
+  @name getStudents
+  @date 1/17/2024
   @parameters void
   @returns ArrayList<Students>
   */
@@ -135,6 +152,8 @@ class Classroom {
 
   /*
   This method returns the assignments ArrayList
+  @name getAssignmentDatabase
+  @date 1/17/2024
   @parameters void
   @returns AssignmentDatabase
   */
@@ -144,6 +163,8 @@ class Classroom {
 
   /*
   This method searches for an Student object using id
+  @name searchID
+  @date 1/15/2024
   @parameters long
   @returns Student
   */
@@ -177,6 +198,8 @@ class Classroom {
   
   /*
   This method creates an assignment in the classroom
+  @name createAssignment
+  @date 1/17/2024
   @parameters void
   @returns void
   */
@@ -205,6 +228,8 @@ class Classroom {
 
   /*
   This method deletes an assignment in the classroom
+  @name removeAssignment
+  @date 1/17/2024
   @parameters int
   @returns void
   */
@@ -221,6 +246,8 @@ class Classroom {
 
   /*
   This function sorts the students arraylist using quick sort.
+  @name sort
+  @date 1/16/2024
   @parameters int, int
   @returns void
   */
@@ -236,6 +263,8 @@ class Classroom {
 
   /*
   This function assigns a random pivot value and sorts around the pivot. Another function is called to help with this.
+  @name partitionRandomPivot
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */
@@ -255,6 +284,8 @@ class Classroom {
 
   /*
   This function arranges the arraylist values around the pivot.
+  @name partition
+  @date 1/16/2024
   @parameters int, int
   @returns int
   */
@@ -290,6 +321,8 @@ class Classroom {
 
   /*
   This method removes a student from the classroom
+  @name deleteStudent
+  @date 1/16/2024
   @parameters Student
   @returns void
   */
